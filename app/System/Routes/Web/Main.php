@@ -13,10 +13,10 @@ use Illuminate\Support\Facades\Route;
 
     Route::get(
         '/home',
-        ['uses' => 'HomeController@home', 'as' => 'home']
+        ['uses' => 'MainController@home', 'as' => 'home']
     );
 
     Route::get(
         '/admin/home',
-        ['uses' => 'HomeController@home', 'as' => 'admin.home', 'middleware' => 'adminAuth']
+        ['uses' => 'MainController@home', 'as' => 'admin.home', 'middleware' => 'adminAuth']
     );
