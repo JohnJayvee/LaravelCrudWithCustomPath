@@ -43,7 +43,6 @@ Route::group([
         'reset-password/{token}',
         'ResetPasswordController@getPassword'
     );
-
     Route::post(
         'reset-password',
         'ResetPasswordController@updatePassword'
